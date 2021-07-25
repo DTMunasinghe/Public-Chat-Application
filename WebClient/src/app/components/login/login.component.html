@@ -1,0 +1,27 @@
+
+<div class="text-center mt-4">
+  <h4>Public Chat Application</h4>
+</div>
+
+<div class="row m-auto">
+  <div class="col-md-6 offset-3">
+    <!-- 'template-driven' form -->
+    <form #form='ngForm' class="form" autocomplete="off" (keydown.enter)="onSubmit(form)" (submit)="onSubmit(form)">
+      <div class="form-group required">
+        <label>Username</label>
+        <input class="form-control" name="UserName" [(ngModel)]="loginModel.UserName" required>
+      </div>
+
+      <div class="form-group required">
+        <label>Password</label>
+        <input type="password" class="form-control" name="Password" [(ngModel)]="loginModel.Password" required>
+      </div>
+
+      <div class="form-row">
+        <button class="btn btn-primary" type="submit" [disabled]="form.invalid">Login</button>
+        <a class="ml-2" routerLink="/registration" routerLinkActive="active" >Sign Up</a>
+      </div>
+    </form>
+  </div>
+</div>
+

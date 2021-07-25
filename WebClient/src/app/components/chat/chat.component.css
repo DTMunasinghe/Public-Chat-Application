@@ -1,0 +1,30 @@
+
+.chat-box {
+    padding: 10px 15px;
+    border: 1px solid gray;
+    width: 50%;
+    height: 600px;
+    overflow-y: auto;
+    background-color: #f9faff;
+    border-radius: 7px;
+}
+
+.sender-box {
+    padding: 10px 20px;
+    border: 1px solid #8399f5;
+    background-color: #e9f2ff;
+    width: fit-content;
+    margin-bottom: 10px;
+    margin-left: auto;
+    border-radius: 7px;
+}
+
+.message {
+    width: 700px;
+}
+
+.logout-button {
+    position: fixed;
+    top: 0;
+    right: 10px;
+}
