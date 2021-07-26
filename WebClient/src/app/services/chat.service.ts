@@ -30,8 +30,8 @@ export class ChatService {
           .build();
     }
 
-    private async startConnection(): Promise<void> {
-        await this._hubConnection
+    private startConnection(): void {
+        this._hubConnection
           .start()
           .then(() => {
             console.log('Hub connection started');   
